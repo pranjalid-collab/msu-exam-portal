@@ -642,7 +642,6 @@ function submitForm() {
 
   fetch(APPS_SCRIPT_URL, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(submission)
   })
   .then(r => r.json())
